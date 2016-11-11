@@ -12,7 +12,9 @@ Copyright: 2016 Jenny Faig & Tyler LaVecchia & William Breen
     <label class="amount">Investment Amount </label> 
     <c:choose>
       <c:when test="${calculation.principal != null}">
-        <input name="principal" type="number" min="0" value ="${calculation.principal}" autofocus/> 
+        <input 
+          name="principal" type="number" min="0" 
+          value ="${calculation.principal}" autofocus/> 
       </c:when>
       <c:otherwise>
         <input name="principal" type="number" min="0" autofocus required/>

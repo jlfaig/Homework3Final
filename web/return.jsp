@@ -25,7 +25,8 @@ Copyright: 2016 Jenny Faig & Tyler LaVecchia & William Breen
       <th class="YearLabel">Year</th>
       <th class="ValueLabel">Value</th>
     </tr>
-    <c:forEach items="${calculation.futureValue}" var="value" varStatus="status">
+    <c:forEach 
+      items="${calculation.futureValue}" var="value" varStatus="status">
       <tr>
         <td class="yearNum">${status.count}</td>
         <td class="secondPoint"><elon:currencyFormat field="${value}"/></td>
